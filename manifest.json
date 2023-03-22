@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT MindMap Creator",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+      "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/chat/*",
+        "http://chat.openai.com/chat/*"
+      ],
+      "js": [
+        "jquery-3.6.3.min.js",
+        "d3.v7.min.js",
+        "content.js"
+      ]
+      }
+    ]
+  }
+
